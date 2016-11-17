@@ -1,4 +1,4 @@
-var bananaX = 250:
+var bananaX = 250;
 document.addEventListener("keydown", function(e) {
   if(e.keyCode == 37){
     bananaX -=15;
