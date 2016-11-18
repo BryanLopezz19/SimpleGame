@@ -6,10 +6,10 @@
       <script src="simplegame.js"></script>
   <body>
     <!-- page content -->
-    <svg width ="80%" viewbox = "0 0 800 500" style="background-color: black">
+    <svg width ="80%" viewbox = "0 0 800 500" style="background-color: skyblue">
      <image id="banana" x="250" y="20" width="80" height="80" xlink:href="http://images.scribblelive.com/2015/11/6/8a806fdb-03d0-4363-8c84-84d63e280c6b.gif">
-       <image id="pancake" x="650" y="50" width="80" height="80" xlink:href="http://data.whicdn.com/images/80478661/thumb.png">
-          <animate attributename="y" from="0" to="390" dur="4s" repeatcount="indefinite">
+       <image id="pancake" x="350" y="50" width="80" height="80" xlink:href="http://data.whicdn.com/images/80478661/thumb.png">
+          <animate id="food" attributename="x" from="100" to="390" dur="4s" begin="0s; food2.end" repeatcount="indefinite"></animate>
         </image>
         </svg>
   </head>
