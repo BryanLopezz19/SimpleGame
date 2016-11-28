@@ -11,7 +11,7 @@ document.addEventListener("keydown", function(e) {
   }
 })
 
-var bananaY = 20;
+var bananaY= 20;
 document.addEventListener("keydown", function(e) {
   if(e.keyCode == 38){
     bananaY -=15;
