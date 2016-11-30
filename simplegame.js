@@ -23,3 +23,7 @@ document.addEventListener("keydown", function(e) {
  document.getElementById("banana").setAttribute("y", bananaY)
   }
 })
+if (part1 && part2) {
+  var bananaX = randomNumber(50,750)
+  document.getElementById("pancakes1").setAttribute("x", randX)
+}
