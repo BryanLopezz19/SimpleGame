@@ -23,7 +23,11 @@ document.addEventListener("keydown", function(e) {
  document.getElementById("banana").setAttribute("y", bananaY)
   }
 })
-if (part1 && part2) {
-  var bananaX = randomNumber(50,750)
-  document.getElementById("pancakes1").setAttribute("x", randX)
-}
+
+if(bananaX > foodX && bananaX < foodX + 70 && pancakesY > pancakesY && bananaY < foodY +70){
+   var randX = randomNumber(0,800)
+   document.getElementById("banana").setAttribute("x", randX)
+   foodEaten = foodEaten + 1
+   document.getElementById("score").textContent = foodEaten
+ }
+})
