@@ -24,9 +24,18 @@ document.addEventListener("keydown", function(e) {
   }
 })
 
-if(bananaX > foodX && bananaX < foodX + 70 && foodY > foodY && bananaY < foodY +70){
-   var randX = randomNumber(0,800)
-   document.getElementById("banana").setAttribute("x", randX)
-   foodEaten = foodEaten + 1
-   document.getElementById("score").textContent = foodEaten
- }
+var foodX = Number(document.getElementById('Banana').getAttribute("x"))
+var foodY = Number(document.getElementById('Banana').getAttribute("y"))
+
+  if(bananaX > foodX && bananaX < foodX + 70 && bananaY > foodY && bananaY < foodY +70){
+    var randX = randomNumber(0,800)
+    document.getElementById("Banana").setAttribute("x", randX)
+    foodEaten = foodEaten + 1
+    document.getElementById("score").textContent = foodEaten
+  }
+
+if(foodEaten == 4){
+  document.getElementById("screen").pauseAnimations()
+  var timeStop = Date.now()
+  var totalTime = timeStop - timeStart
+}
