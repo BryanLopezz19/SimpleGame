@@ -24,7 +24,7 @@ document.addEventListener("keydown", function(e) {
   }
 })
 
-if(bananaX > foodX && bananaX < foodX + 70 && pancakesY > pancakesY && bananaY < foodY +70){
+if(bananaX > pancakesX && bananaX < pancakesX + 70 && pancakesY > pancakesY && bananaY < pancakesY +70){
    var randX = randomNumber(0,800)
    document.getElementById("banana").setAttribute("x", randX)
    foodEaten = foodEaten + 1
